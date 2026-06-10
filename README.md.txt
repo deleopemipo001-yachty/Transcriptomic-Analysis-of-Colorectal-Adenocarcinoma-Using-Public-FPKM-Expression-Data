@@ -164,4 +164,4 @@ Transcriptomic-Analysis-of-Colorectal-Adenocarcinoma-Using-Public-FPKM-Expressio
 
 ## About the Author
 
-\*\*Abdul-Waliyy Ayandiran\*\* is a final-year Physiology student at the University of Lagos with interests in bioinformatics, genomics, cancer biology, and translational physiology. His work focuses on applying computational approaches to investigate disease mechanisms and support precision medicine research.
+Abdul-Waliyy Ayandiran is a final-year Physiology student at the University of Lagos with interests in bioinformatics, genomics, cancer biology, and translational physiology. His work focuses on applying computational approaches to investigate disease mechanisms and support precision medicine research.
