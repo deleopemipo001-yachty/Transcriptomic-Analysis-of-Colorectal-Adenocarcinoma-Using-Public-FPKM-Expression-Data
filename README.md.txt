@@ -19,7 +19,8 @@ Total Samples	4
 Tumor Samples	2
 Normal Samples	2
 Design	Paired tumor-normal comparison
-Why this dataset?
+
+Significance of this dataset?
 Colorectal cancer remains one of the leading causes of cancer-related morbidity and mortality worldwide. This dataset provides paired tumor-normal RNA-Seq samples, enabling direct comparison of transcriptional changes associated with tumorigenesis. The paired design reduces inter-individual variability, increasing the statistical power to detect biologically meaningful differences.
 
 Workflow
@@ -45,8 +46,6 @@ Visualisation
   - PCA plot
   - Volcano plot
   - DEG.csv (top DEGs)
-
-\&#x20; - KEGG.csv
       │
       ▼
 Interpretation \\\& Reporting
@@ -62,10 +61,10 @@ Interpretation \\\& Reporting
 
 |Metric|Count|
 |-|-|
-|Total genes tested|12,407|
-|Total DEGs (adj. p < 0.05)|\*\*1,043\*\*|
-|Upregulated in tumor|\*\*512\*\*|
-|Downregulated in tumor|\*\*531\*\*|
+|Total genes tested | 12,407|
+|Total DEGs (adj. p < 0.05) | \*\*1,043\*\*|
+|Upregulated in tumor | \*\*512\*\*|
+|Downregulated in tumor | \*\*531\*\*|
 
 \\---
 
@@ -115,21 +114,16 @@ Interpretation \\\& Reporting
 
 
 
-## Biological Interpretation
+Biological Interpretation
+The analysis identified 1,043 differentially expressed genes between colorectal adenocarcinoma and matched normal tissues, indicating extensive transcriptomic reprogramming associated with tumour development.
 
-The analysis identified \*\*1,043 differentially expressed genes\*\* between colorectal adenocarcinoma and matched normal tissues, indicating extensive transcriptomic reprogramming associated with tumour development.
+Upregulated genes reflect hallmarks of cancer biology. S100P and CA9 point to a hypoxic, metabolically stressed tumour microenvironment — CA9 is a direct target of HIF-1α and serves as a reliable hypoxia biomarker in solid tumours. CXCL8 drives pro-inflammatory signalling, immune cell recruitment, and angiogenesis, all of which support tumour growth. TACSTD2 (TROP2) is a well-established epithelial cancer antigen currently targeted in antibody-drug conjugate therapies. ETV4, an ETS family transcription factor, promotes tumour invasion and metastasis, while MMP7 degrades extracellular matrix components to facilitate local spread. The upregulation of tight junction protein CLDN2 and secretory protease PRSS22 further reflects remodelling of the epithelial architecture in tumour tissue. SPP1 (Osteopontin) and TCN1 are frequently elevated in gastrointestinal malignancies and have been proposed as circulating biomarker candidates.
 
+Downregulated genes highlight a profound loss of normal colonic epithelial identity. AQP8, SLC26A3, GUCA2A, and GUCA2B are all highly expressed in differentiated colonocytes and are responsible for water transport, ion exchange, and secretory signalling in the normal colon. Their collective downregulation is consistent with the dedifferentiation that characterises colorectal adenocarcinoma. ZG16 is a lectin involved in mucosal barrier function and is among the most consistently downregulated genes in colorectal cancer transcriptomic studies. The loss of immunoglobulin-related genes (IGHA1, IGHA2, JCHAIN) and CEACAM7 suggests altered mucosal immune defence and disrupted cell adhesion programmes in the tumour epithelium. CLCA4 downregulation has been linked to loss of epithelial differentiation and increased tumour aggressiveness in colorectal cancer.
 
+Collectively, these findings reveal dysregulation across cell proliferation, apoptosis, metabolic adaptation, extracellular matrix remodelling, ion transport, epithelial differentiation, and mucosal immunity — processes central to colorectal carcinogenesis.
 
-\*\*Upregulated genes\*\* reflect hallmarks of cancer biology. \*S100P\* and \*CA9\* point to a hypoxic, metabolically stressed tumour microenvironment — \*CA9\* is a direct target of HIF-1α and serves as a reliable hypoxia biomarker in solid tumours. \*CXCL8\* drives pro-inflammatory signalling, immune cell recruitment, and angiogenesis, all of which support tumour growth. \*TACSTD2\* (TROP2) is a well-established epithelial cancer antigen currently targeted in antibody-drug conjugate therapies. \*ETV4\*, an ETS family transcription factor, promotes tumour invasion and metastasis, while \*MMP7\* degrades extracellular matrix components to facilitate local spread. The upregulation of tight junction protein \*CLDN2\* and secretory protease \*PRSS22\* further reflects remodelling of the epithelial architecture in tumour tissue. \*SPP1\* (Osteopontin) and \*TCN1\* are frequently elevated in gastrointestinal malignancies and have been proposed as circulating biomarker candidates.
-
-
-
-\*\*Downregulated genes\*\* highlight a profound loss of normal colonic epithelial identity. \*AQP8\*, \*SLC26A3\*, \*GUCA2A\*, and \*GUCA2B\* are all highly expressed in differentiated colonocytes and are responsible for water transport, ion exchange, and secretory signalling in the normal colon. Their collective downregulation is consistent with the dedifferentiation that characterises colorectal adenocarcinoma. \*ZG16\* is a lectin involved in mucosal barrier function and is among the most consistently downregulated genes in colorectal cancer transcriptomic studies. The loss of immunoglobulin-related genes (\*IGHA1\*, \*IGHA2\*, \*JCHAIN\*) and \*CEACAM7\* suggests altered mucosal immune defence and disrupted cell adhesion programmes in the tumour epithelium. \*CLCA4\* downregulation has been linked to loss of epithelial differentiation and increased tumour aggressiveness in colorectal cancer.
-
-Collectively, these findings reveal dysregulation across \*\*cell proliferation\*\*, \*\*apoptosis\*\*, \*\*metabolic adaptation\*\*, \*\*extracellular matrix remodelling\*\*, \*\*ion transport\*\*, \*\*epithelial differentiation\*\*, and \*\*mucosal immunity\*\* — processes central to colorectal carcinogenesis.
-
-By identifying genes and pathways altered in colorectal adenocarcinoma, this analysis contributes to understanding disease mechanisms and highlights potential candidates for future biomarker discovery and therapeutic target investigations.
+By identifying genes and pathways altered in colorectal adenocarcinoma, this analysis contributes to understanding disease mechanisms and highlights potential candidates for future biomarker discovery and therapeutic target investigations
 
 
 
@@ -137,29 +131,32 @@ By identifying genes and pathways altered in colorectal adenocarcinoma, this ana
 
 |Tool / Package|Purpose|
 |-|-|
-|R (v4.x)|Statistical computing environment|
-|limma (Bioconductor)|Differential expression analysis|
-|ggplot2|Volcano plot visualisation|
-|pheatmap|Heatmap of top DEGs|
-|GEOquery|GEO data retrieval|
-|dplyr / tidyverse|Data wrangling|
+|R (v4.x)|              Statistical computing environment|
+|limma (Bioconductor)| Differential expression analysis|
+|ggplot2|               Volcano plot visualisation|
+|pheatmap|                Heatmap of top DEGs|
+|GEOquery|                 GEO data retrieval|
+|dplyr /             tidyverse |Data wrangling|
 
 
 
 ## Repository Structure
 
-
-project/
-├── README.md               ← You are here
-├── data/
-│   └── DEGs\\\_from\\\_GEO\\\_FPKM.csv
-├── scripts/
-│   └── differential\\\_expression.R
+```
+Transcriptomic-Analysis-of-Colorectal-Adenocarcinoma-Using-Public-FPKM-Expression-Data/
+├── README.md
+├── .gitignore
+├── .RData
+├── .Rhistory
+├── figures/
+│   ├── pca_plot.png
+│   ├── volcano_plot.png
+│   └── heatmap_top50.png
 ├── results/
-│   └── significant\\\_DEGs.csv
-└── figures/
-    ├── pca\\\_plot.png
-    ├── volcano\\\_plot.png
+│   ├── DEGs_from_GEO_FPKM.csv
+│   └── significant_DEGs.csv
+└── meta/
+```
 
 
 
