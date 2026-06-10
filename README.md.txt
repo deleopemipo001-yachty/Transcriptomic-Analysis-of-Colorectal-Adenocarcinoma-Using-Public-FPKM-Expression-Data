@@ -62,9 +62,9 @@ Interpretation \\\& Reporting
 |Metric|Count|
 |-|-|
 |Total genes tested | 12,407|
-|Total DEGs (adj. p < 0.05) | \*\*1,043\*\*|
-|Upregulated in tumor | \*\*512\*\*|
-|Downregulated in tumor | \*\*531\*\*|
+|Total DEGs (adj. p < 0.05) | 1,043 |
+|Upregulated in tumor | 512 |
+|Downregulated in tumor | 531 |
 
 \\---
 
